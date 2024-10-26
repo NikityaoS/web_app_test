@@ -17,8 +17,24 @@
       }
     </style>
   </head>
+
   <body>
     <h1>Hello!</h1>
-    <button>Click Me!</button>
+    <button class="btn">Click Me!</button>
+    <script>
+      let tg = window.Telegram.WebApp
+      let myBtn = document.getElementsByClassName('btn')
+      myBtn.addEventListener('click', () => {
+        let username = tg.initDataUnsafe.user.username
+        let firstName = tg.initDataUnsafe.user.first_name
+
+        let data = {
+          username,
+          firstName,
+        }
+
+        tg.sendData(JSON.stringify(data))
+      })
+    </script>
   </body>
 </html>

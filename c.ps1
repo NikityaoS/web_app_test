@@ -8,4 +8,4 @@ git commit -m "!"
 git push origin main
 
 # Выводим сообщение об успешном завершении
-Write-Host "Изменения успешно отправлены на удаленный репозиторий."
+Write-Host "Changes pushed to repo!"
