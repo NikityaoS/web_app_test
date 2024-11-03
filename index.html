@@ -85,8 +85,6 @@
     <script>
       let tg = window.Telegram.WebApp
 
-      tg.sendData('!!!!!')
-
       let fBtn = document.getElementsByClassName('f-btn')[0]
       let sBtn = document.getElementsByClassName('s-btn')[0]
 
@@ -106,7 +104,7 @@
           text: text.value,
         }
 
-        // data = tg.initData()
+        data = tg.initData
 
         tg.sendData(data)
       })
