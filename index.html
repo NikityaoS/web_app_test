@@ -98,13 +98,15 @@
         let description = document.getElementsByClassName('desc-inp')[0]
         let text = document.getElementsByClassName('text-inp')[0]
 
-        let data = {
-          title: title.value,
-          desc: description.value,
-          text: text.value,
-        }
+        // let data = {
+        //   title: title.value,
+        //   desc: description.value,
+        //   text: text.value,
+        // }
 
-        tg.sendData(data)
+        let data = tg.initData
+
+        tg.sendData(JSON.stringify(data))
       })
     </script>
   </body>
